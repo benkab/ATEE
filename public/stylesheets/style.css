@@ -1,0 +1,48 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  color: #838282;
+  font-weight: normal;
+  background: #F4F6F7;
+}
+
+.row{
+  margin: 0px !important;
+  padding : 0px !important;
+}
+
+section{
+  margin: 0px !important;
+  padding : 0px !important;
+}
+
+.panel-default{
+  border-bottom: 1px solid #E6E6E6;
+  background: #FEFEFE;
+  border-radius: 0px;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.panel-default .panel-title{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.panel-default .lign{
+  border-top: 2px solid #838282;
+  max-width: 7%;
+  margin: auto 0;
+  padding-bottom: 25px;
+  opacity: 0.5; 
+}
+
+input.ng-invalid.ng-touched{
+  border-color : #F76E6E;
+}
+
+textarea.ng-invalid.ng-touched{
+  border-color : #F76E6E;
+}

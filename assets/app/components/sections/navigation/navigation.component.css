@@ -1,0 +1,78 @@
+header{
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar-default{
+    border-bottom: 1px solid #E6E6E6;
+    background: #FEFEFE;
+    margin-bottom: 60px;
+}
+
+.navbar-default .logo-column{
+    border-left: 1px solid #E6E6E6;
+    text-align: center;
+}
+
+.navbar-default .logo-column img{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    opacity: 0.6;
+}
+
+.navbar-default .search-column{
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+}
+
+.navbar-default input{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    font-family:"Rubik", Ionicons;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    opacity: 0.7;
+}
+
+.navbar-default .user-details-column{
+    text-align: right;
+    border-right: 1px solid #E6E6E6;
+}
+
+.navbar-default .user-details-column ul{
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-default .user-details-column ul li{
+    list-style: none;
+    display: inline;
+}
+
+.navbar-default .user-details-column ul li.Deconnexion{
+    color: #838282;
+}
+
+.navbar-default .user-details-column ul li.Deconnexion a{
+    color: #838282;
+    opacity: 0.7;
+}
+
+.navbar-default .user-details-column ul li a{
+    text-decoration: none;
+}
+
+
+
+.navbar-default .user-details-column ul li a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #E6E6E6;
+}

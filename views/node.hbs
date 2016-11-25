@@ -1,0 +1,36 @@
+<form action="/" method="POST">
+    <label for="surname">Surname</label>
+    <input type="text" name="surname">
+    <br>
+    <label for="name">Name</label>
+    <input type="text" name="name">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email">
+    <br>
+    <label for="password">Password</label>
+    <input type="text" name="password">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<table>
+    <thead>
+        <tr>
+            <td>Surname</td>
+            <td>Name</td>
+            <td>Email</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{surname}}</td>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

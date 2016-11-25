@@ -1,0 +1,121 @@
+<header>
+    <navigation></navigation>
+</header>
+<section>
+    <div class="container-fluid">
+        <div class="col-xs-12">
+            <div class="col-lg-8 col-md-12 col-sm-12 users">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="panel-title">
+                            TOUS LES AGENTS
+                            <span class="pull-right users-filter">
+                                <input type="text" class="form-control" name="recherche" placeholder="FILTRE &#xf31b;">
+                            </span>
+                        </p>
+                        <p class="lign"></p>
+                        <table class="table table-hover">
+                            <thead class="text-center first-row">
+                                <td>Photo</td>
+                                <td class="text-left">Prenom</td>
+                                <td class="text-left">Nom</td>
+                                <td>Date d'engagement</td>
+                                <td>Departement</td>
+                                <td>Status</td>
+                                <td>Actions</td>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center" *ngFor="let user of users">
+                                    <td class="image"><img src="/img/user-default.png" alt=""></td>
+                                    <td class="text-left">{{ user.name }}</td>
+                                    <td class="text-left">{{ user.surname }}</td>
+                                    <td>10-04-2015</td>
+                                    <td>Management</td>
+                                    <td><small class="label label-success">Actif</small></td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="glyphicon glyphicon-pencil"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span class="glyphicon glyphicon-trash"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <select name="users-departement-filter" id="users-departement-filter" class="form-control users-departement-filter">
+                            <option value="null">Tous les agents</option>
+                            <option value="null">Departement</option>
+                            <option value="null">Management</option>
+                            <option value="null">Comptabilite</option>
+                            <option value="null">Agent</option>
+                        </select>
+                        <select name="status-filter" id="status-filter" class="form-control status-filter">
+                            <option value="null">Status</option>
+                            <option value="null">Actif</option>
+                            <option value="null">Blocke</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 user-form">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="panel-title">NOUVEL AGENT</p>
+                        <p class="lign"></p>
+                        <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+                            <!--<div class="form-group">-->
+                                <!--<input type="text" class="form-control" id="card_number" placeholder="ID" disabled>-->
+                            <!--</div>-->
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="surname" placeholder="Nom">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Prenom">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                            </div>
+                            <!--<div class="form-group">-->
+                                <!--<input type="date" class="form-control" id="hire_date" placeholder="Date d'engagement">-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<select name="departement" id="departement" class="form-control">-->
+                                    <!--<option value="null">Departement</option>-->
+                                    <!--<option value="null">Management</option>-->
+                                    <!--<option value="null">Comptabilite</option>-->
+                                    <!--<option value="null">Agent</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<select name="status" id="status" class="form-control">-->
+                                    <!--<option value="null">Status</option>-->
+                                    <!--<option value="null">Actif</option>-->
+                                    <!--<option value="null">Blocke</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<input type="file" id="picture" placeholder="Photo" class="form-control">-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-default btn-sm btn-block">Enregistrer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

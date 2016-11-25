@@ -1,0 +1,33 @@
+import { User } from "./user.model"
+import {Injectable} from "@angular/core";
+import {Http, Headers, Response} from "@angular/http";
+import 'rxjs/Rx';
+import {Observable} from "rxjs";
+
+@Injectable()
+export class UserService {
+
+    private users : User[] = [];
+
+    constructor(private http: Http){}
+
+    signup(user : User){
+
+        const requestBody   = JSON.stringify(user);
+        const headers       = new Headers({'Content-Type': 'application/json'});
+        return this.http.post('http://localhost:3000/getUsers', requestBody, {headers: headers})
+            .map((response: Response) => response.json())
+            .catch((error: Response) => Observable.throw(error.json()));
+
+    }
+
+    getUsers(){
+
+        return this.http.get('http://localhost:3000/getUsers')
+            .map((response: Response) => {
+                return this.users = response.json().obj;
+            })
+            .catch((error: Response) => Observable.throw(error.json()));
+    }
+
+}

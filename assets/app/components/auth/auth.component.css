@@ -1,0 +1,88 @@
+.signin{
+    margin-top: 15%;
+}
+
+.signin .signin-title{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.signin .input-group{
+    border: 1px solid #E4E5E6;
+}
+.signin .email{
+    border-radius: 0px;
+    margin-bottom: 7px;
+}
+
+.signin .email input{
+    border-radius: 0px;
+}
+
+.signin .email .input-group-addon{
+    border-radius: 0px;
+}
+
+.signin .password{
+    border-radius: 0px;
+}
+
+.signin .password input{
+    border-radius: 0px;
+}
+
+.signin .email .input-group-addon{
+    border-radius: 0px;
+}
+
+.signin .password .input-group-addon{
+    border-radius: 0px;
+}
+
+.signin .password .ion-key, .ion-ios-email{
+    font-size: 21px;
+}
+
+.signin .password .ion-key{
+    padding-right: 5px !important;
+}
+
+
+.signin input{
+    font-size: 12.5px;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.signin .input-group-addon{
+    border: none;
+    background: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.signin .input-group-addon span{
+    opacity: 0.5;
+}
+
+.signin .btn-default{
+    height:45px;
+    font-weight: 500;
+    opacity: 0.7;
+    border: 1px solid #E4E5E6;
+    background: #FEFEFE;
+}
+
+.signin .btn-default:hover{
+    opacity: 0.6;
+}
+
+.signin .motdepasseoublie a{
+    text-decoration: none;
+    color: #64C6E8;
+    font-weight:normal;
+}
